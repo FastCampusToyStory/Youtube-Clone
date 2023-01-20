@@ -37,7 +37,7 @@ const details = () => {
           id={videoId}
           width="100%"
           height="550"
-          src={`http://www.youtube.com/embed/${videoId}?autoplay=1?mute=1`}
+          src={`http://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1`}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>
         {Array.isArray(video)
