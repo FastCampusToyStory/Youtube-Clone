@@ -8,10 +8,6 @@ type Props = {
 };
 
 const videos = (props: Props) => {
-  // 입력된 숫자만큼으로만 한줄에 컴포넌트를 만들려고 함
-  // 그냥 들어온 props를 보낸다로 간단하게
-  console.log(props.rowArray);
-
   return (
     <div className={styles.videoComponent}>
       {props.rowArray.map((row: any, index) => {

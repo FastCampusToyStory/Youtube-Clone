@@ -28,7 +28,6 @@ const List = ({ data }: Props) => {
   // 비디오 정보 duration, views 받아오기
   const video = async (id: string) => {
     const { data } = await videoInfo(id);
-    console.log('video', data);
     const duration = data.items[0].contentDetails.duration;
     const views = data.items[0].statistics.viewCount;
     setVideoData({

@@ -19,10 +19,10 @@ const videoContainer = (props: Props) => {
         toggle = err ? true : false;
       });
       if (toggle) {
-        console.log('error');
+        //console.log('error');
         setSearchData([]);
       } else {
-        console.log('success');
+        //console.log('success');
         setSearchData(response.data.items);
         console.timeEnd('rendering');
       }
@@ -35,10 +35,7 @@ const videoContainer = (props: Props) => {
 
     let temp: object[] = [];
     for (let i = 0; i < searchData.length; i++) {
-      console.log('i', i);
-      console.log(i % columns);
       if (i !== 0 && i % columns === 0) {
-        console.log('temp', temp);
         videoArray.push(temp);
         temp = [];
       }
@@ -48,7 +45,6 @@ const videoContainer = (props: Props) => {
       temp.push({ tag: 'empty' });
     }
     videoArray.push(temp);
-    console.log('videoArray', videoArray);
     return videoArray;
   }
 

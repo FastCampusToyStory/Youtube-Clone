@@ -20,7 +20,6 @@ const Reply = ({ reply }: Props) => {
 
   function toggleReply() {
     setIsShow(!isShow);
-    console.log(isShow);
   }
 
   return (

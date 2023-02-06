@@ -36,7 +36,6 @@ const video = (props: Props) => {
       try {
         const response = await videoInfo(data.id.videoId);
         setViews(response.data.items);
-        console.log(response.data.items);
       } catch (error) {
         console.log('에러가 발생했습니다.');
       }

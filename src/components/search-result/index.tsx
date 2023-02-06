@@ -27,18 +27,14 @@ const index = (props: Props) => {
         toggle = err ? true : false;
       });
       if (toggle) {
-        console.log('error');
         setSearchData([]);
       } else {
-        console.log('success');
         setSearchData(response.data.items);
         console.timeEnd('rendering');
       }
     };
     searchResult();
   }, [params.searchQuery]);
-
-  console.log(searchData);
 
   return (
     <div className={styles.frame}>
